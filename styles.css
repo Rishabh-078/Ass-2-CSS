@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:black;
+    --secondary-color:white;
+    --third-color: rgb(214, 211, 211);
+}
+
+body{
+    background-color:var(--primary-color);
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 25rem;
+    height: 30rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    background-color:var(--secondary-color);
+}
+
+h1.head-name{
+    display: flex;
+    padding-bottom: 1rem;
+    border-bottom: medium solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.chip-box{
+    margin: auto;
+    background-color: var(--third-color);
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+
+.sub-head-name{
+    font-size: small;
+    padding-left: 0.5rem;
+}
+
+.chip-wrapper{display:flex;
+}
+
+input{
+    flex-grow: 1;
+    margin:0.25rem;
+    background-color: var(--third-color);
+    border:none;
+    outline: none;
+}
+
+button.chip-typ1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+}
+button.chip-typ1:hover {
+    background-color: var(--third-color);
+  }
+
+.cross-icon{
+    padding-left: 0.3rem;
+}
+
+/* Drawer */
+
+.drawer-box{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:15rem;
+    background-color: var(--third-color);
+}
+
+.h2-head{
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+.drawer-btn{
+    display: flex;
+    justify-content: start;
+    padding:0.75rem;
+    outline: none;
+    border: none;
+}
+
+.drawer-btn:hover{
+    background-color: gray;
+}
+
+/* Header */
+
+.header-box{
+    display: flex;
+    background-color: var(--third-color);
+    margin: auto;
+    padding:0.7rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+.header-icon{
+    padding:0.3rem;
+    outline: none;
+    border: none;
+    background-color: var(--third-color);
+}
+.right-align{
+    margin-left: auto;
+}
+
+.header-icon:hover{
+    background-color: gray;
+    border-radius: 20rem;
+}
+
+/* Badge */
+
+.badge-box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: var(--third-color);
+    padding:2rem;
+    border-radius: 0.5rem;
+    width: 15rem;
+    justify-content: center;
+}
+
+.round-btn{
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color: gray;
+    color: var(--secondary-color);
+}
+
+.right-top{
+    position: absolute;
+    right: 25rem;
+}
+
+.small-badge{
+    font-size: small;
+}
+
+.large-badge{
+    font-size: large;
+}
+
+.click-btn{
+    border-radius: 2rem;
+    width:3.5rem;
+    margin-top: 1rem;
+    padding:0.2rem;
+}
+
